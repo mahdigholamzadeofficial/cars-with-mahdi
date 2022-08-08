@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --primary1 : #1e0d5d;
+  --primary2 : #3d2b8e;
+  --primary3 : #9c5de9;
+  --primary4 : #c896cb;
+  --light :#eee;
+}
+@font-face {
+  font-family: libraBold;
+  src: url("./assets/fonts/LibreBaskerville-Bold.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: semiBoldItalic;
+  src: url("./assets/fonts/PlayfairDisplay-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: semiBold;
+  src: url("./assets/fonts/Sora-SemiBold.ttf");
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: semiBold;
+}
+
+h5{
+  margin-bottom: 0;
+}
+
+textarea{
+  resize: none;
 }

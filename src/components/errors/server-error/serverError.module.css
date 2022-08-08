@@ -1,0 +1,12 @@
+.errorContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--primary2);
+  color: var(--light);
+}
+.errorContainer span{
+  font-size: 2em ;
+}

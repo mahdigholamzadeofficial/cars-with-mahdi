@@ -1,0 +1,38 @@
+.notFound {
+  height: 100vh;
+  background-image: url("../../../assets/images/error-404.jpg");
+  /* background-color: red; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.notFound::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  background-color: var(--primary1);
+  opacity: 0.6;
+}
+
+.notFound button {
+  background-color: var(--light);
+  border: none;
+  color: var(--primary1);
+  border-radius: 20px;
+  padding: 12px 30px;
+  font-family: sans-serif;
+  cursor: pointer;
+  z-index: 20;
+  position: absolute;
+  bottom: 30px;
+  font-family: semiBold;
+
+}

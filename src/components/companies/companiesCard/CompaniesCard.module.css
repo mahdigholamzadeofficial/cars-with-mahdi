@@ -1,0 +1,40 @@
+.companiesCard {
+  border-bottom: 1px solid #fff;
+}
+
+.companiesCard:last-child {
+  border-bottom: none;
+}
+
+.companiesCard a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+.companiesCard a::after {
+  content: "";
+  bottom: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid #fff;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.companiesCard a:hover::after {
+  bottom: 0;
+}
+.companiesCard img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.companiesCard a:hover {
+  color: var(--primary4);
+}

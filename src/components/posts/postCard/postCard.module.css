@@ -1,0 +1,100 @@
+.postCard {
+  animation: transform 1s linear ;
+}
+@keyframes transform {
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+.postCardDetail {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.postCardDetail img {
+  transform: scale(none);
+  transition: all 1.5s ease;
+  width: 100%;
+  height: 230px;
+}
+.postCardDetail div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(to bottom, transparent, #000000a9);
+  opacity: 0;
+  transition: all 0.5s ease;
+  font-family: semiBoldItalic;
+}
+.postCardDetail div h4 {
+  padding: 7px;
+  color: #fff;
+  letter-spacing: 4px;
+  transition: all 1s ease;
+  width: 200%;
+  transform: translateX(-50%);
+  font-size: 1.3em;
+  opacity: 0;
+}
+
+.postCardDetail div a {
+  text-decoration: none;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.329);
+  text-align: center;
+  padding: 7px;
+  color: #eee;
+  letter-spacing: 40px;
+  transition: all 1s ease;
+  transform: translateY(100%);
+  opacity: 0;
+  font-family: semiBold;
+  border-top: 1px solid #eee;
+  position: relative;
+  overflow: hidden;
+}
+.postCardDetail div a::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: -100%;
+  background-color: var(--light);
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+.postCardDetail:hover img {
+  transform: scale(1.4);
+}
+.postCardDetail:hover div {
+  opacity: 1;
+}
+.postCardDetail:hover div a {
+  letter-spacing: 1px;
+  transform: translateY(0);
+  opacity: 1;
+}
+.postCardDetail div a:hover{
+  color: #000;
+}
+.postCardDetail div a:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+.postCardDetail:hover div h4 {
+  letter-spacing: 1px;
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -1,0 +1,65 @@
+.form {
+  background-color: var(--primary1);
+  border-radius: 8px;
+  padding: 0px;
+}
+.inputs {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: var(--primary2);
+  color: #fff;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+.active{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: var(--light);
+  color: var(--primary1);
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+.inputs:hover{
+  border:1px solid var(--primary4)
+}
+.inputs:focus {
+  border: 1px solid var(--light);
+  animation: shadow 3s linear infinite;
+}
+@keyframes shadow {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,
+      0 0 5px #fff;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+.inputs::placeholder {
+  color: #fff;
+}
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 4px 6px;
+  background-color: var(--light);
+  color: var(--primary1);
+  outline:none;
+  transition: all 0.3s linear;
+}
+
+.button:hover{
+  background-color: #b9b8b8;
+}
+
